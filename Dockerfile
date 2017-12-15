@@ -41,5 +41,5 @@ COPY package.json package.json
 RUN npm install
 RUN npm install is-docker karma-junit-reporter
 
-CMD npm test
+CMD timeout -k 60 60 npm test
 
